@@ -1,0 +1,25 @@
+{% extends '_templates/base.njk' %}
+
+{% block page_title %}Ships of the Golden Age of pirates{% endblock %}
+
+{% block content %}
+<article class="container">
+  <h1>QUEEN Albums</h1>
+  <p>Queen's Full Discography.</p>
+  <div class="row">
+    {% for albums in queen.discography %}
+    <div class="col-sm-6 col-lg-4">
+      <div class="card mb-4 bg-light border-success">
+         <img class="card-img-top" src="img/discs/{{albums.image}}" alt="">
+        <div class="card-body">
+          <h5 class="card-title">{{ albums.title }}</h5>
+          <h6 class="card-title">{{ albums.year }}</h6>
+          <p class="card-image">{{ albums.image }}</p>
+          <a href="{{ queen.source }} "target="blank">Source</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</article>
+{% endblock %}
