@@ -10,10 +10,14 @@
   <article class="container">
     <div class="row">
       <div class="col-sm-4">
-          <img src="../img/{{ slug }}.jpg" alt="" class="img-fluid mb-4">
+          <img src="/img/members/{{ image }}" alt="queen member" class="img-fluid mb-4">
       </div>
       <div class="col-sm-8">
           <h1>{{ name }}</h1>
+          <p>Member from: {{ tenure }}</p>
+          <p>Birthdate: {{ birthdate }}</p>
+          <p>Birthplace: {{ birthplace }}</p>
+          <p>Instruments: {{ instruments }}</p>
           <p>{{ description | safe }}</p>
           
       </div>
