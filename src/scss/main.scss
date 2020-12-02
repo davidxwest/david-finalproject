@@ -24,6 +24,40 @@
 
 @import "jumbotron";
 
-h3 {
-  font-size: 1.5rem;
+$primary-color:rgb(143, 131, 122);
+
+.navbar {
+  margin-bottom: auto;
+}
+
+.bg-dark {
+  background-color: $primary-color;
+}
+
+.navbar-dark .navbar-brand {
+  color: pink;
+}
+
+.nav {
+  color: aqua;
+}
+
+h1, h2 {
+  font-family: 'Castoro', serif;
+}
+
+button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div.img-fluid {
+  text-align: center;
+}
+
+div.container {
+  width: 80%;
+}
+
+body {
+  background-color: $primary-color;
 }

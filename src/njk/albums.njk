@@ -8,12 +8,11 @@
   <div class="row">
     {% for albums in queen.discography %}
     <div class="col-sm-6 col-lg-4">
-      <div class="card mb-4 bg-light">
+      <div class="card mb-4 bg-secondary">
          <img class="card-img-top" src="img/discs/{{albums.image}}" alt="">
         <div class="card-body">
           <h5 class="card-title">{{ albums.title }}</h5>
           <h6 class="card-title">{{ albums.year }}</h6>
-          <a href="{{ queen.source }} "target="_blank">Source</a>
         </div>
       </div>
     </div>
