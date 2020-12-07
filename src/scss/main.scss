@@ -20,13 +20,12 @@
 
 // Import partials
 
-@import "nav";
 
 @import "jumbotron";
 
 $primary-color:rgb(143, 131, 122);
 
-.navbar {
+.nav {
   margin-bottom: auto;
 }
 
@@ -38,26 +37,28 @@ $primary-color:rgb(143, 131, 122);
   color: pink;
 }
 
-.nav {
-  color: aqua;
+a:visited {
+  color: purple;
 }
 
 h1, h2 {
   font-family: 'Castoro', serif;
 }
 
-button {
+.btn-lg {
   font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-div.img-fluid {
-  text-align: center;
-}
-
-div.container {
-  width: 80%;
+  padding-left: 17rem;
 }
 
 body {
   background-color: $primary-color;
 }
+
+.jumbotron.banner {
+  background: url(../img/queen-band-wallpaper.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 40rem;
+  color: purple;
+  text-align: center;
+}
+
